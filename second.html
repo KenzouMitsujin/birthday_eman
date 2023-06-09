@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aiman's Birthday Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F9F9F9;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+      position: relative;
+    }
+
+    h1 {
+      color: #ce00e0;
+      font-size: 24px;
+      -webkit-text-stroke: 1px solid black;
+    }
+
+    p {
+      color: #333333;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-style: italic;
+      color: #666666;
+    }
+
+    .special-text {
+      color: #00f10c;
+      font-size: 18px;
+      margin-top: 30px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .party-elements {
+      position: absolute;
+      top: 0;
+      right: -80px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: partyAnimation 5s infinite;
+    }
+
+    .balloon {
+      width: 40px;
+      height: 60px;
+      background-color: #FFC107;
+      border-radius: 50% 50% 40% 40%;
+      margin: 10px;
+      animation: balloonFloat 2s infinite;
+      position: relative;
+    }
+
+    .rope {
+      width: 2px;
+      height: 100px;
+      background-color: #000000;
+      position: absolute;
+      bottom: 65px;
+      left: 50%;
+      transform: translateX(50%);
+      animation: ropeFloat 2s infinite;
+      animation-delay: 1s;
+    }
+
+    .party-elements.left{
+        right: unset;
+        left: -80px;
+    }
+
+    .ballon.left{
+        margin-left: 1opx;
+        margin-right: 0;
+    }
+
+    .rope.left{
+        transform: translateX(50%);
+    }
+    @keyframes balloonFloat {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes ropeFloat {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(20px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .firework {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #FF5722;
+      border-radius: 50%;
+      animation: fireworkAnimation 1s infinite;
+    }
+
+    .firework-1 {
+      top: 50px;
+      left: 50px;
+      background-color: yellow;
+    }
+
+    .firework-2 {
+      top: 20px;
+      left: 140px;
+      background-color: red;
+    }
+
+    .firework-3 {
+      top: 45px;
+      left: 380px;
+      background-color: cyan;
+    }
+
+    .firework-4 {
+      top: 300px;
+      left: 30px;
+      background-color: purple;
+    }
+
+    .firework-5 {
+      top: 280px;
+      left: 330px;
+      background-color: greenyellow;
+    }
+
+    .firework-6 {
+      top: 300px;
+      left: 400px;
+      background-color: gray;
+    }
+
+    .firework-7 {
+      top: 15px;
+      left: 410px;
+      background-color: pink;
+    }
+
+    .firework-8 {
+      top: 330px;
+      left: 80px;
+      background-color: gold;
+    }
+
+    @keyframes fireworkAnimation {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.5;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="party-elements">
+      <div class="balloon"></div>
+      <div class="rope"></div>
+    </div>
+
+    <div class="party-elements left">
+        <div class="balloon left"></div>
+        <div class="rope left"></div>
+    </div>
+
+    <div class="firework firework-1"></div>
+    <div class="firework firework-2"></div>
+    <div class="firework firework-3"></div>
+    <div class="firework firework-4"></div>
+    <div class="firework firework-5"></div>
+    <div class="firework firework-6"></div>
+    <div class="firework firework-7"></div>
+    <div class="firework firework-8"></div>
+
+    <h1>Happy Birthday, Aiman!</h1>
+    <p class="special-text">Thank you for being my best friend forever. You are the kindest, most caring person I know. Your presence brings so much joy to my life, and I'm grateful for every moment we've shared. Wishing you a birthday filled with love, laughter, and countless cherished memories. Aiman, you truly deserve all the happiness in the world. May Allah bless you and may all affairs be simplified. Happy birthday, my dear friend!</p>
+    <p class="message">From: Aqil Hafiy</p>
+  </div>
+</body>
+</html>

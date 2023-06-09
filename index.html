@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aiman's Birthday Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F9F9F9;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      color: #ff0000;
+      font-size: 24px;
+      -webkit-text-stroke: 1px solid black;
+    }
+
+    .special-text {
+      color: #00b7ff;
+      font-size: 18px;
+      margin-top: 30px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    }
+
+    .open-button {
+      background-color: #0077ff;
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+      box-shadow: 0 10px 11px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .ignore-button {
+      background-color: #ff7e33;
+      color: #FFFFFF;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 10px 11px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+    
+    .open-button:hover,
+    .ignore-button:hover{
+        transform: scale(1.1);
+    }
+
+    .ignore-button:hover{
+        background-color: #ff0000;
+    }
+
+    .open-button:hover{
+        background-color: greenyellow;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>PLEASE READ BEFORE OPENING THE CARD!</h1>
+    <p class="special-text"><b>Hi Aiman, Today is your special day, right? Guess what..I didn't forgot your special day, Aiman. HEHEHE >////<. I has made something special just for you. Before you open it, I really hope you didn't put too much hope on this special day card :(. I'm sorry too if it was too basic! I hope you like it, Aiman. Thank you for reading this before opening the card. Now, you can press open button bottom here! </b> </p>
+    <div class="button-container">
+    <button class="ignore-button"
+    onclick="ignoreCard()">Ignore</button>
+    <button class="open-button" onclick="openWishesPage()">Open</button>
+    </div>
+  </div>
+  
+
+  <script>
+    function ignoreCard() {
+      alert("You ignored the card. :(");
+    }
+
+    function openWishesPage() {
+      window.location.href = "second.html";
+    }
+  </script>
+</body>
+</html>
